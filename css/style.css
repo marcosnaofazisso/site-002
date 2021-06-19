@@ -9,6 +9,103 @@
     --beje: #ded6c0;
     --blanco: #f5f0ed;
     --gris: #241d1b;
+    --texto-claro: #f5f0ed;
+    --texto-oscuro: #3c3c3b;  
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu a {
+    font-weight: bold;
+    color: var(--texto-claro);
+    text-decoration: none;
+}
+
+#container {
+    max-width: auto;
+    width: auto;
+    height: 70vh;
+    min-height: 30vh;
+}
+#container .titulo {
+    color: var(--blanco);
+    text-align: center;
+}
+
+
+#spacio {
+    max-width: auto;
+    width: auto;
+    height: 50vh;
+    min-height: 20vh;
+}
+
+.spacio1 {
+    width: 50%;
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+
+.spacio2 {
+    width: 50%;
+    float: right;
+    height: 100%;
+    text-align: center;
+}
+
+
+
+#ofertas {
+    max-width: auto;
+    width: auto;
+    height: 60vh;
+    min-height: 30vh;
+    text-align: center;
+}
+
+#productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: auto;
+    width: auto;
+    height: 60vh;
+    min-height: 20vh;
+
+}
+
+
+#contacto {
+    max-width: auto;
+    width: auto;
+    height: 50vh;
+    min-height: 20vh;
+}
+.contacto1 {
+    width: 50%;
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+
+.contacto2 {
+    width: 50%;
+    float: right;
+    height: 100%;
+    text-align: center;
+}
+
+#zocalo {
+    max-width: auto;
+    width: auto;
+    height: 20vh;
+    min-height: 20vh;
+    text-align: center;
 }
 
 
@@ -17,8 +114,74 @@
 
 
 
+/* fonts */ 
+h1 {
+    font-size: 44px;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 24px;
+}
+hr {
+    color: var(--blanco);
+    width: 5%;
+}
+p {
+    font-size: 16px;
+}
+button {
+    font-size: 14px;
+}
 
 
+
+
+
+
+/* estilização das fontes */
+
+.spacio1 h2,
+.spacio1 p{
+    color: var(--beje);
+
+}
+.spacio2 h2, 
+.spacio2 p{
+    color: var(--rojo);
+}
+
+#ofertas h1,
+#ofertas p {
+    color: var(--blanco);
+}
+
+
+#productos h2,
+#productos p {
+   flex-direction: row;
+    /* border: 5px solid salmon; */
+    /*TO DO */
+}
+
+.contacto1 h2, 
+.contacto1 p {
+    color: var(--rojo);
+}
+
+.contacto2 h2, 
+.contacto2 p {
+    color: var(--beje);
+}
+#container p {
+    color: var(--blanco);
+    text-align: center;
+}
+
+#zocalo p {
+    color: var(--beje);
+}
 
 
 
@@ -29,6 +192,7 @@
 
 #container {
     background: url(../img/Fondo1.jpg);
+    background-size: cover;
 }
 
 .spacio1 {
@@ -39,6 +203,7 @@
 }
 #ofertas {
     background: url(../img/Fondo2.jpg);
+    background-size: cover;
 }
 #productos {
     background-color: var(--blanco);
