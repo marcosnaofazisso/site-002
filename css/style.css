@@ -1,0 +1,54 @@
+* {
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+:root {
+    --rojo: #d03b40;
+    --beje: #ded6c0;
+    --blanco: #f5f0ed;
+    --gris: #241d1b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* backgrounds */
+
+#container {
+    background: url(../img/Fondo1.jpg);
+}
+
+.spacio1 {
+    background-color: var(--rojo);
+}
+.spacio2 {
+    background-color: var(--beje);
+}
+#ofertas {
+    background: url(../img/Fondo2.jpg);
+}
+#productos {
+    background-color: var(--blanco);
+}
+.contacto1 {
+    background-color: var(--beje);
+}
+.contacto2 {
+    background-color: var(--rojo);
+}
+#zocalo {
+    background-color: var(--gris);
+}
