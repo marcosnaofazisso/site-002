@@ -1,5 +1,5 @@
 * {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     margin: 0 auto;
 }
@@ -17,30 +17,54 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: end;
+
+}
+.menu ul li {
+    display: inline-block;
+    border: 2px solid var(--blanco);
+
 }
 .menu a {
+    display: block;
     font-weight: bold;
     color: var(--texto-claro);
     text-decoration: none;
+    padding: 1vh 1vw;
 }
 
+.menu a:hover {
+    box-shadow: 0 0 1em var(--blanco);
+}
+.logo {
+    padding: 1vh 1vw;
+}
+.header {
+    display: flex;
+}
 #container {
-    max-width: auto;
     width: auto;
     height: 70vh;
-    min-height: 30vh;
 }
-#container .titulo {
+
+
+.titulo h1 {
+    margin-top: 10vh;
     color: var(--blanco);
     text-align: center;
+}
+.titulo p {
+    display: block;
+    margin-top: 5vh;
+    color: var(--blanco);
+    text-align: center;
+    width: 50%;
 }
 
 
 #spacio {
-    max-width: auto;
     width: auto;
     height: 50vh;
-    min-height: 20vh;
 }
 
 .spacio1 {
@@ -48,6 +72,7 @@
     float: left;
     height: 100%;
     text-align: center;
+    padding: 20vh 0;
 }
 
 .spacio2 {
@@ -55,42 +80,63 @@
     float: right;
     height: 100%;
     text-align: center;
+    padding: 20vh 0;
 }
-
+.spacio1 p,
+.spacio2 p {
+    padding: 1vh 6vw;
+}
 
 
 #ofertas {
-    max-width: auto;
     width: auto;
     height: 60vh;
-    min-height: 30vh;
     text-align: center;
+
+}
+.ofertas1 {
+    display: block;
+    padding: 10vh 0;
+}
+.ofertas1 p {
+    margin-top: 5vh;
+    max-width: 50%;
+}
+
+.ofertas1 button {
+    color: var(--blanco);
+    padding: 1vh 1vw;
+    background-color: transparent;
+    border: 2px solid var(--blanco);
+    margin-top: 5vh;
+    min-height: 10%;
+}
+.ofertas1 button:hover {
+    box-shadow: 0 0 1em var(--blanco);
 }
 
 #productos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: auto;
-    max-width: auto;
-    width: auto;
     height: 60vh;
-    min-height: 20vh;
-
+    width: auto;
+    padding: 2em;
 }
-
 
 #contacto {
     max-width: auto;
     width: auto;
     height: 50vh;
-    min-height: 20vh;
 }
+
+#contacto p{
+    max-width: 50%;
+}
+
 .contacto1 {
     width: 50%;
     float: left;
     height: 100%;
     text-align: center;
+    padding: 15vh 0;
 }
 
 .contacto2 {
@@ -98,13 +144,15 @@
     float: right;
     height: 100%;
     text-align: center;
+    padding: 15vh 0;
+
 }
 
 #zocalo {
-    max-width: auto;
     width: auto;
-    height: 20vh;
-    min-height: 20vh;
+    max-height: 10vh;
+    min-height: 1vh;
+    padding: 2vh 0vw;
     text-align: center;
 }
 
@@ -117,12 +165,15 @@
 /* fonts */ 
 h1 {
     font-size: 44px;
+    margin-bottom: 0.5em;
 }
 h2 {
     font-size: 28px;
+    margin-bottom: 0.5em;
 }
 h3 {
     font-size: 24px;
+    margin-bottom: 0.5em;
 }
 hr {
     color: var(--blanco);
@@ -130,13 +181,17 @@ hr {
 }
 p {
     font-size: 16px;
+    margin-top: 0.5em;
+
 }
 button {
     font-size: 14px;
 }
 
-
-
+img {
+    max-width: 100%;
+    display: inline-block;
+}
 
 
 
@@ -157,12 +212,42 @@ button {
     color: var(--blanco);
 }
 
+#productos img {
+    display: inline-block;
+    float: left;
+    min-height: 10%;
+}
 
-#productos h2,
+.productos1 {
+    display: inline-block; 
+    min-height: 50%;
+    width: 50%;
+    float:left;
+}
+.productos2 {
+    display: inline-block;    
+    min-height: 50%;
+    width: 50%;
+    float: right;
+}
+
+#productos h2 {
+    display: block;
+}
+
+.p1, .p2, .p3, .p4 {
+    display: inline-block;
+    padding: 2vh 2vw;
+    text-align: justify;
+
+}
 #productos p {
-   flex-direction: row;
-    /* border: 5px solid salmon; */
-    /*TO DO */
+    display: block;
+    text-align: center;
+    padding: 1vh 1vw;
+    margin-left: 20%;
+    text-align: justify;
+
 }
 
 .contacto1 h2, 
@@ -176,7 +261,6 @@ button {
 }
 #container p {
     color: var(--blanco);
-    text-align: center;
 }
 
 #zocalo p {
