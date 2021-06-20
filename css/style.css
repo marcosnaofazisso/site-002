@@ -22,8 +22,6 @@
 }
 .menu ul li {
     display: inline-block;
-    border: 2px solid var(--blanco);
-
 }
 .menu a {
     display: block;
